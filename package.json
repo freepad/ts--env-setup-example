@@ -1,5 +1,5 @@
 {
-  "name": "js-weather-forecast-repo",
+  "name": "ts--env-setup-example",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -10,17 +10,9 @@
     "start": "webpack serve --mode development",
     "build": "webpack --mode production"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/talanova/js-weather-forecast-repo.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/talanova/js-weather-forecast-repo/issues"
-  },
-  "homepage": "https://github.com/talanova/js-weather-forecast-repo#readme",
   "devDependencies": {
     "@babel/core": "7.23.0",
     "@babel/preset-env": "7.22.20",
