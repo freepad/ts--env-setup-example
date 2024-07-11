@@ -1,7 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const webpack = require("webpack");
-const path = require("path");
+const path = require("node:path");
 
 module.exports = {
   entry: {
@@ -13,16 +12,15 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'),
+      directory: path.join(__dirname, "dist"),
     },
     compress: true,
     hot: true,
-    port: 9000,
-    allowedHosts: "all"
+    port: 8080,
+    allowedHosts: "all",
   },
   plugins: [
     new HtmlWebpackPlugin({ template: "index.html" }),
     new CleanWebpackPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
   ],
 };
